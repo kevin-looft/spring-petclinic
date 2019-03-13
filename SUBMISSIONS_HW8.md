@@ -31,7 +31,7 @@ Docker Compose - App server and mysql
  ![Screen Capture #6](images/docker-compose2.PNG)
  
  - Browser accessing Veterinarians page from docker container
- ![Screen Capture #7](images/vets2.PNG)
+ ![Screen Capture #7](images/vets_2.PNG)
  
  **Note, I had to re-enable the spring property to populate the database on each run, otherwise the table was petclinic.vets was not found and I got this error**
  ![Screen Capture #8](images/vets_sql_failure.PNG)
