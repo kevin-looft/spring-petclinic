@@ -20,3 +20,19 @@ Docker Compose - Mysql
 
 - Connection Exception stacktrace 
 ![Screen Capture #5](images/connection_exception.PNG)
+
+
+Docker Compose - App server and mysql
+- Updated docker-compose file: https://github.com/kevin-looft/spring-petclinic/blob/master/docker-compose.yml
+
+ - Updated application-mysql.properties file: https://github.com/kevin-looft/spring-petclinic/blob/master/src/main/resources/application-mysql.properties
+ 
+ - docker-compose up output
+ ![Screen Capture #6](images/docker-compose2.PNG)
+ 
+ - Browser accessing Veterinarians page from docker container
+ ![Screen Capture #1](images/vets2.PNG)
+ 
+ **Note, I had to re-enable the spring property to populate the database on each run, otherwise the table was petclinic.vets was not found and I got this error**
+ ![Screen Capture #1](images/vets_sql_failure.PNG)
+ 
